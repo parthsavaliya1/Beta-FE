@@ -39,6 +39,14 @@ function S02Screen() {
     },
   ];
 
+  const renderScreens03 = () => {
+    window.location.href = "/s03";
+  };
+
+  const renderScreenS04 = () => {
+    window.location.href = "/s04";
+  };
+
   return (
     <Container>
       <Row className="justify-content-md-center">
@@ -63,7 +71,9 @@ function S02Screen() {
                   century, and even more so from the 1930s, Hebrew children’s
                   newspapers …
                 </div>
-                <button>Read the children press story</button>
+                <button onClick={() => renderScreenS04()}>
+                  Read the children press story
+                </button>
               </div>
               <div>
                 <div className="text-white">
@@ -73,7 +83,10 @@ function S02Screen() {
                   <div>
                     <div className="text-white">{item?.desc}</div>
                     <div>
-                      <img src={item?.img}></img>
+                      <img
+                        onClick={() => renderScreens03()}
+                        src={item?.img}
+                      ></img>
                     </div>
                   </div>
                 ))}
