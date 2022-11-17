@@ -8,6 +8,7 @@ import "./App.css";
 import S01Screen from "./components/S01Screen/S01Screen";
 import S02Screen from "./components/S02Screen/S02Screen";
 import S03Screen from "./components/S03Screen/S03Screen";
+import S04Screen from "./components/S04Screen/S04Screen";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" element={<S01Screen />} />
       <Route path="s02" element={<S02Screen />} />
       <Route path="s03" element={<S03Screen />} />
+      <Route path="s04" element={<S04Screen />} />
     </Routes>
   );
 }
