@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import "./s3.css";
 
 const S03Screen = () => {
   const dataObj = [
@@ -15,22 +16,49 @@ const S03Screen = () => {
     <Container>
       <Row className="justify-content-md-center">
         <Col>
-          <div className="s01-main">
-            <div>
-              <div className="text-white">
-                Stories from the Library Newspapers Collection
+          <div className="s03-main">
+            <div className="s03-main-layout">
+              <div>
+                <div className="text-white">
+                  <h1 className="m-0">
+                    Stories from the Library Newspapers Collection
+                  </h1>
+                </div>
               </div>
-            </div>
 
-            <div>
-              {dataObj?.map((item) => (
-                <>
-                  <div className="text-white">{item.desc}</div>
-                  <div>
-                    <img src={item.img} />
+              <div>
+                <div className="display-grid mt-41">
+                  {dataObj?.map((item) => (
+                    <>
+                      <div className="s03-img-frame">
+                        <div className="img-frame-text text-center">
+                          {item.desc}
+                        </div>
+                        <div>
+                          <img src={item.img} />
+                        </div>
+                      </div>
+                    </>
+                  ))}
+                </div>
+              </div>
+
+              <div className="back d-flex mt-41">
+                <div className="d-flex">
+                  <p className="m-0 back-arrow">&#10005; Close</p>
+
+                  <div className="d-flex">
+                    <span href="">En</span> <span className="mr-ml-10">/</span>{" "}
+                    <span href="">عر</span> <span className="mr-ml-10">/</span>
+                    <span href="">עב</span>
                   </div>
-                </>
-              ))}
+                </div>
+                <div className="d-flex">
+                  <span>
+                    <span className="i-cricle">ℹ</span> About
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </Col>
