@@ -35,7 +35,7 @@ const S03Screen = () => {
                           {item.desc}
                         </div>
                         <div>
-                          <img src={item.img} />
+                          <img src={item.img} className="img-responsive" />
                         </div>
                       </div>
                     </>
@@ -43,7 +43,7 @@ const S03Screen = () => {
                 </div>
               </div>
 
-              <div className="back d-flex mt-41">
+              <div className="back d-flex">
                 <div className="d-flex">
                   <p className="m-0 back-arrow">&#10005; Close</p>
 
