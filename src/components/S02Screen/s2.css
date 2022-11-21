@@ -81,7 +81,7 @@ h1 {
   text-align: center;
   position: relative;
 }
-.img-frame::before {
+.img-frame:last-child:before {
   content: "";
   background: transparent
     linear-gradient(
@@ -143,3 +143,5 @@ h1 {
 .back-arrow {
   margin-right: 102px !important;
 }
+.footer-leg a{color: #000000;}
+.footer-leg a.active{border-bottom: 2px solid;}

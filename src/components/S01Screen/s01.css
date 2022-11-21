@@ -1,6 +1,7 @@
 body {
   background: #000000 0% 0% no-repeat padding-box;
 }
+a,a:hover{text-decoration: none;}
 .s01-main {
   top: 0px;
   left: 0px;

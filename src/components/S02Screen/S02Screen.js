@@ -1,48 +1,48 @@
-import React, { useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import "./s2.css";
+import React, { useEffect } from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import './s2.css'
 
 function S02Screen() {
   var urls = [
-    "/Images/s01t.png",
-    "/Images/s01.png",
-    "/Images/s01t.png",
-    "/Images/s02t.png",
-    "/Images/s01t.png",
-    "/Images/s04t.png",
-  ];
-  var cout = 1;
+    '/Images/s01t.png',
+    '/Images/s01.png',
+    '/Images/s01t.png',
+    '/Images/s02t.png',
+    '/Images/s01t.png',
+    '/Images/s04t.png',
+  ]
+  var cout = 1
 
   useEffect(() => {
-    const element = document.getElementsByClassName("s01-image");
+    const element = document.getElementsByClassName('s01-image')
     if (element[0]) {
-      console.log("ele", element);
-      element[0].src = `${urls[cout]}`;
+      console.log('ele', element)
+      element[0].src = `${urls[cout]}`
       setInterval(() => {
-        element[0].src = `${urls[cout]}`;
-        cout == urls.length - 1 ? (cout = 0) : cout++;
-      }, 50000);
+        element[0].src = `${urls[cout]}`
+        cout == urls.length - 1 ? (cout = 0) : cout++
+      }, 50000)
     }
-  }, []);
+  }, [])
 
   const openThirdScreen = () => {
-    window.location.href = "/s03";
-  };
+    window.location.href = '/s03'
+  }
 
   const openScreenS04 = () => {
-    window.location.href = "/s04";
-  };
+    window.location.href = '/s04'
+  }
 
   const imageObj = [
     {
-      desc: "Orthodox Press",
-      img: "/Images/Orthodox_cover_test.png",
+      desc: 'Orthodox Press',
+      img: '/Images/Orthodox_cover_test.png',
     },
     {
-      desc: "Children’s Press",
-      img: "/Images/Zerubbabel-Gilad.png",
+      desc: 'Children’s Press',
+      img: '/Images/Zerubbabel-Gilad.png',
     },
-  ];
+  ]
 
   return (
     <Container>
@@ -88,15 +88,21 @@ function S02Screen() {
                     (dir:rtl) All icons are in Masada in all langs
                   </div>
 
-                  <div className="back d-flex">
+                  <div className="back d-flex footer-leg">
                     <p className="m-0 back-arrow">← Back</p>
 
                     <div className="d-flex">
-                      <span href="">En</span>{" "}
-                      <span className="mr-ml-10">/</span>{" "}
-                      <span href="">عر</span>{" "}
-                      <span className="mr-ml-10">/</span>
-                      <span href="">עב</span>
+                      <a href="" className="active">
+                        En
+                      </a>
+                      <a href="" className="mr-ml-10">
+                        /
+                      </a>{' '}
+                      <a href="">عر</a>
+                      <a href="" className="mr-ml-10">
+                        /
+                      </a>
+                      <a href="">עב</a>
                     </div>
                   </div>
                 </div>
@@ -128,7 +134,7 @@ function S02Screen() {
         </Col>
       </Row>
     </Container>
-  );
+  )
 }
 
-export default S02Screen;
+export default S02Screen
