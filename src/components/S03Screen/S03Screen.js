@@ -12,6 +12,10 @@ const S03Screen = () => {
     { desc: "The Arab Revolt", img: "/Images/s032.png" },
     { desc: "Story Cover", img: "/Images/s032.png" },
   ];
+
+  const openScreenS08 = () => {
+    window.location.href = "/s08";
+  };
   return (
     <Container>
       <Row className="justify-content-md-center">
@@ -54,7 +58,7 @@ const S03Screen = () => {
                   </div>
                 </div>
                 <div className="d-flex">
-                  <span>
+                  <span onClick={() => openScreenS08()}>
                     <span className="i-cricle">ℹ</span> About
                   </span>
                 </div>

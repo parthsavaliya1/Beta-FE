@@ -29,6 +29,10 @@ function S02Screen() {
     window.location.href = "/s03";
   };
 
+  const openScreenS04 = () => {
+    window.location.href = "/s04";
+  };
+
   const imageObj = [
     {
       desc: "Orthodox Press",
@@ -72,7 +76,10 @@ function S02Screen() {
                       20th century, and even more so from the 1930s, Hebrew
                       children’s newspapers …
                     </div>
-                    <button className="read-btn  m-b-67">
+                    <button
+                      onClick={() => openScreenS04()}
+                      className="read-btn  m-b-67"
+                    >
                       Read the children press story
                     </button>
                   </div>
@@ -105,7 +112,10 @@ function S02Screen() {
 
                         <button className="read-btn num-of-img">5+</button>
 
-                        <button className="read-btn all-stories">
+                        <button
+                          onClick={() => openThirdScreen()}
+                          className="read-btn all-stories"
+                        >
                           All stories
                         </button>
                       </div>
