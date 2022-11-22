@@ -1,26 +1,26 @@
 @font-face {
   font-family: MasadaBold;
-  src: url('../../public/fonts/Masada-Bold.otf');
+  src: url('/public/fonts/Masada-Bold.otf');
 }
 @font-face {
   font-family: MasadaBlack;
-  src: url('../../public/fonts/Masada-Black.otf');
+  src: url('/public/fonts/Masada-Black.otf');
 }
 @font-face {
   font-family: MasadaBlackItalic;
-  src: url('../../public/fonts/Masada-BlackItalic.otf');
+  src: url('/public/fonts/Masada-BlackItalic.otf');
 }
 @font-face {
   font-family: MasadaBoldItalic;
-  src: url('../../public/fonts/Masada-BoldItalic.otf');
+  src: url('/public/fonts/Masada-BoldItalic.otf');
 }
 @font-face {
   font-family: MasadaBook;
-  src: url('../../public/fonts/Masada-Book.otf');
+  src: url('/public/fonts/Masada-Book.otf');
 }
 @font-face {
   font-family: MasadaMedium;
-  src: url('../../public/fonts/Masada-Medium.otf');
+  src: url('/public/fonts/Masada-Medium.otf');
 }
 
 .App {
