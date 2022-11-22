@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import S02Screen from "../S02Screen/S02Screen";
+import { addBlackClass } from "../../utils";
 import "./s01.css";
 
 const S01Screen = () => {
@@ -24,6 +24,7 @@ const S01Screen = () => {
         cout == urls.length - 1 ? (cout = 0) : cout++;
       }, 1000);
     }
+    addBlackClass();
   }, []);
 
   const openSecondScreen = () => {

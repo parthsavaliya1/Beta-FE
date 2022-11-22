@@ -1,28 +1,33 @@
-import React, { Component } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import React, { Component } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { addGrayClass } from "../../utils";
 
 class S06Screen extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       screenImage: 1,
-    }
+    };
+  }
+
+  componentDidMount() {
+    addGrayClass();
   }
 
   handleImageChangeRight = () => {
     this.setState({
       screenImage: 2,
-    })
-  }
+    });
+  };
 
   handleImageChangeLeft = () => {
     this.setState({
       screenImage: 1,
-    })
-  }
+    });
+  };
 
   render() {
-    const { screenImage } = this.state
+    const { screenImage } = this.state;
     return (
       <Container>
         <Row className="justify-content-md-center">
@@ -91,9 +96,9 @@ class S06Screen extends Component {
                     <div>
                       <div>
                         {screenImage === 1 ? (
-                          <img src={'/Images/s05_1.png'} />
+                          <img src={"/Images/s05_1.png"} />
                         ) : (
-                          <img src={'/Images/s05_2.png'} />
+                          <img src={"/Images/s05_2.png"} />
                         )}
                       </div>
                       <div>
@@ -154,7 +159,7 @@ class S06Screen extends Component {
           </Col>
         </Row>
       </Container>
-    )
+    );
   }
 }
-export default S06Screen
+export default S06Screen;

@@ -28,6 +28,9 @@ body{
 .App {
   text-align: center;
 }
+.bg-black {
+  background: #000000 0% 0% no-repeat padding-box;
+}
 
 .App-logo {
   height: 40vmin;

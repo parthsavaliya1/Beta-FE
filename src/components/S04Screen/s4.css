@@ -30,6 +30,10 @@
   }
   .s4-block-width .title-text {
     font-size: 52px;
+    font-family: 'MasadaMedium';
+  }
+  .read-btn-s04 {
+    font-family: 'MasadaBook';
   }
   .s4-border-right {
     border-right: 2px solid #000000;

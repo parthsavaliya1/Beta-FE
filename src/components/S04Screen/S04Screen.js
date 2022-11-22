@@ -1,13 +1,17 @@
-import React, { Component } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import './s4.css'
+import React, { Component } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { addGrayClass } from "../../utils";
+import "./s4.css";
 
 class S04Screen extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       screen: 1,
-    }
+    };
+  }
+  componentDidMount() {
+    addGrayClass();
   }
   render() {
     return (
@@ -39,7 +43,7 @@ class S04Screen extends Component {
                       <div>
                         <div>
                           <img
-                            src={'/Images/Zerubbabel Gilad.png'}
+                            src={"/Images/Zerubbabel Gilad.png"}
                             className="img-responsive"
                           ></img>
                         </div>
@@ -55,12 +59,14 @@ class S04Screen extends Component {
                         press is the abundance of well-known and prominent
                         creators who …
                       </div>
-                      <button className="read-btn mb-mt-36">Read More</button>
+                      <button className="read-btn read-btn-s04 mb-mt-36">
+                        Read More
+                      </button>
                     </div>
                     <div className="s4-block-width">
                       <div>
                         <img
-                          src={'/Images/Zerubbabel Gilad04.png'}
+                          src={"/Images/Zerubbabel Gilad04.png"}
                           className="img-responsive"
                         ></img>
                       </div>
@@ -75,7 +81,9 @@ class S04Screen extends Component {
                         in the years when Israel changed its face. A Holocaust
                         took …
                       </div>
-                      <button className="read-btn mb-mt-36">Read More</button>
+                      <button className="read-btn read-btn-s04 mb-mt-36">
+                        Read More
+                      </button>
                     </div>
                   </div>
                   <div className="s4-border-left">
@@ -83,7 +91,7 @@ class S04Screen extends Component {
                       <div>
                         <div>
                           <img
-                            src={'/Images/Zerubbabel Giladz.png'}
+                            src={"/Images/Zerubbabel Giladz.png"}
                             className="img-responsive"
                           ></img>
                         </div>
@@ -98,7 +106,9 @@ class S04Screen extends Component {
                         The children’s magazine focused quite a bit on beauty,
                         play and fun. But there was another facet to it: …
                       </div>
-                      <button className="read-btn mb-mt-36">Read More</button>
+                      <button className="read-btn read-btn-s04 mb-mt-36">
+                        Read More
+                      </button>
                     </div>
                   </div>
                   <div>
@@ -116,7 +126,7 @@ class S04Screen extends Component {
                       </a>
                       <a href="" className="mr-ml-10">
                         /
-                      </a>{' '}
+                      </a>{" "}
                       <a href="">عر</a>
                       <a href="" className="mr-ml-10">
                         /
@@ -135,7 +145,7 @@ class S04Screen extends Component {
           </Col>
         </Row>
       </Container>
-    )
+    );
   }
 }
-export default S04Screen
+export default S04Screen;

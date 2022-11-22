@@ -1,21 +1,26 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import './s3.css'
+import React, { useEffect } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { addBlackClass } from "../../utils";
+import "./s3.css";
 
 const S03Screen = () => {
   const dataObj = [
-    { desc: 'The Dreyfus Affair', img: '/Images/s032.png' },
-    { desc: 'Children’s Press', img: '/Images/s032.png' },
-    { desc: 'Parties Press', img: '/Images/s032.png' },
-    { desc: 1948, img: '/Images/s032.png' },
-    { desc: 'Orthodox Press', img: '/Images/s032.png' },
-    { desc: 'The Arab Revolt', img: '/Images/s032.png' },
-    { desc: 'Story Cover', img: '/Images/s032.png' },
-  ]
+    { desc: "The Dreyfus Affair", img: "/Images/s032.png" },
+    { desc: "Children’s Press", img: "/Images/s032.png" },
+    { desc: "Parties Press", img: "/Images/s032.png" },
+    { desc: 1948, img: "/Images/s032.png" },
+    { desc: "Orthodox Press", img: "/Images/s032.png" },
+    { desc: "The Arab Revolt", img: "/Images/s032.png" },
+    { desc: "Story Cover", img: "/Images/s032.png" },
+  ];
+
+  useEffect(() => {
+    addBlackClass();
+  }, []);
 
   const openScreenS08 = () => {
-    window.location.href = '/s08'
-  }
+    window.location.href = "/s08";
+  };
   return (
     <Container>
       <Row className="justify-content-md-center">
@@ -76,7 +81,7 @@ const S03Screen = () => {
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default S03Screen
+export default S03Screen;

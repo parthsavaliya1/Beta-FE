@@ -1,48 +1,41 @@
-import React, { useEffect } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import './s2.css'
+import React, { useEffect } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { addGrayClass } from "../../utils";
+import "./s2.css";
 
 function S02Screen() {
   var urls = [
-    '/Images/s01t.png',
-    '/Images/s01.png',
-    '/Images/s01t.png',
-    '/Images/s02t.png',
-    '/Images/s01t.png',
-    '/Images/s04t.png',
-  ]
-  var cout = 1
+    "/Images/s01t.png",
+    "/Images/s01.png",
+    "/Images/s01t.png",
+    "/Images/s02t.png",
+    "/Images/s01t.png",
+    "/Images/s04t.png",
+  ];
+  var cout = 1;
 
   useEffect(() => {
-    const element = document.getElementsByClassName('s01-image')
-    if (element[0]) {
-      console.log('ele', element)
-      element[0].src = `${urls[cout]}`
-      setInterval(() => {
-        element[0].src = `${urls[cout]}`
-        cout == urls.length - 1 ? (cout = 0) : cout++
-      }, 50000)
-    }
-  }, [])
+    addGrayClass();
+  }, []);
 
   const openThirdScreen = () => {
-    window.location.href = '/s03'
-  }
+    window.location.href = "/s03";
+  };
 
   const openScreenS04 = () => {
-    window.location.href = '/s04'
-  }
+    window.location.href = "/s04";
+  };
 
   const imageObj = [
     {
-      desc: 'Orthodox Press',
-      img: '/Images/Orthodox_cover_test.png',
+      desc: "Orthodox Press",
+      img: "/Images/Orthodox_cover_test.png",
     },
     {
-      desc: 'Children’s Press',
-      img: '/Images/Zerubbabel-Gilad.png',
+      desc: "Children’s Press",
+      img: "/Images/Zerubbabel-Gilad.png",
     },
-  ]
+  ];
 
   return (
     <Container>
@@ -78,7 +71,7 @@ function S02Screen() {
                     </div>
                     <button
                       onClick={() => openScreenS04()}
-                      className="read-btn  m-b-67"
+                      className="read-btn read-btn-s02  m-b-67"
                     >
                       Read the children press story
                     </button>
@@ -97,7 +90,7 @@ function S02Screen() {
                       </a>
                       <a href="" className="mr-ml-10">
                         /
-                      </a>{' '}
+                      </a>{" "}
                       <a href="">عر</a>
                       <a href="" className="mr-ml-10">
                         /
@@ -110,20 +103,24 @@ function S02Screen() {
                   <div className="block-title mb-30">
                     ◼ More Stories from the collection
                   </div>
-                  {imageObj?.map((item) => (
+                  {imageObj?.map((item, index) => (
                     <div className="img-frame">
                       <div className="img-frame-text">{item?.desc}</div>
                       <div>
                         <img src={item?.img} className="img-responsive"></img>
-
-                        <button className="read-btn num-of-img">5+</button>
-
-                        <button
-                          onClick={() => openThirdScreen()}
-                          className="read-btn all-stories"
-                        >
-                          All stories
-                        </button>
+                        {index === imageObj?.length - 1 && (
+                          <>
+                            <button className="read-btn read-btn-all num-of-img">
+                              5+
+                            </button>
+                            <button
+                              onClick={() => openThirdScreen()}
+                              className="read-btn read-btn-all all-stories"
+                            >
+                              All stories
+                            </button>
+                          </>
+                        )}
                       </div>
                     </div>
                   ))}
@@ -134,7 +131,7 @@ function S02Screen() {
         </Col>
       </Row>
     </Container>
-  )
+  );
 }
 
-export default S02Screen
+export default S02Screen;
