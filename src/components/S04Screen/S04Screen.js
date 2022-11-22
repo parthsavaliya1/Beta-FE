@@ -20,7 +20,7 @@ class S04Screen extends Component {
           <Col>
             <div className="s04-main">
               <div className="s03-main-layout">
-                <div className="text-center">
+                <div className="text-center sticky-header">
                   <div className="mb-51">
                     <div className="font-size-18 mb-7">BILLBOARD</div>
                     <div className="font-size-18">
@@ -63,7 +63,7 @@ class S04Screen extends Component {
                         Read More
                       </button>
                     </div>
-                    <div className="s4-block-width">
+                    <div className="s4-block-width s4-over-hidden">
                       <div>
                         <img
                           src={"/Images/Zerubbabel Gilad04.png"}

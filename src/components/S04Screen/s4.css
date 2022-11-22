@@ -54,6 +54,7 @@
   }
   .two-side-block .num-of-img {
     bottom: 0;
+    top: 102%;
   }
   .two-side-block::before {
     content: "";
@@ -86,3 +87,15 @@
     left: 0;
     right: 0;
   }
+
+  .s4-over-hidden  {
+    height: 360px;
+      overflow: hidden;
+    }
+    .sticky-header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #D4D8D1;
+    z-index: 9;
+    }
