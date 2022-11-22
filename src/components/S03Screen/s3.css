@@ -1,0 +1,37 @@
+.s03-main {
+  padding: 100px 0;
+  color: #000000;
+  background: #000000 !important;
+  width: 100%;
+}
+.s03-main-layout {
+  max-width: 984px;
+  margin: 0px auto;
+}
+.display-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.s03-img-frame {
+  flex: 0 0 calc(27.74% - 0px);
+  margin: 12.5px;
+  background: #ffffff;
+  padding: 25px 15px 15px;
+}
+.s03-main .back {
+  color: #ffffff !important;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+.i-cricle {
+  border: 1px solid;
+  border-radius: 50% !important;
+  height: 28px;
+  width: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.s03-main .footer-leg a{color: #ffffff;}
+.s03-main .footer-leg a.active{border-bottom: 2px solid #ffffff;}
