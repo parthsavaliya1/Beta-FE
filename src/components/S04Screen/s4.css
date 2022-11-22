@@ -41,7 +41,7 @@
   .mb-mt-36 {
     margin: 36px 0;
   }
-  .s04-main .back {
+  .s04-main .back ,.s08-main .back {
     justify-content: space-between;
     margin-top: 90px;
   }

@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import "./s4.css";
+import React, { Component } from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import './s4.css'
 
 class S04Screen extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       screen: 1,
-    };
+    }
   }
   render() {
     return (
@@ -39,7 +39,7 @@ class S04Screen extends Component {
                       <div>
                         <div>
                           <img
-                            src={"/Images/Zerubbabel Gilad.png"}
+                            src={'/Images/Zerubbabel Gilad.png'}
                             className="img-responsive"
                           ></img>
                         </div>
@@ -60,7 +60,7 @@ class S04Screen extends Component {
                     <div className="s4-block-width">
                       <div>
                         <img
-                          src={"/Images/Zerubbabel Gilad04.png"}
+                          src={'/Images/Zerubbabel Gilad04.png'}
                           className="img-responsive"
                         ></img>
                       </div>
@@ -83,7 +83,7 @@ class S04Screen extends Component {
                       <div>
                         <div>
                           <img
-                            src={"/Images/Zerubbabel Giladz.png"}
+                            src={'/Images/Zerubbabel Giladz.png'}
                             className="img-responsive"
                           ></img>
                         </div>
@@ -106,16 +106,22 @@ class S04Screen extends Component {
                   </div>
                 </div>
 
-                <div className="back d-flex">
+                <div className="back d-flex footer-leg">
                   <div className="d-flex">
                     <p className="m-0 back-arrow">← Back</p>
 
                     <div className="d-flex">
-                      <span href="">En</span>{" "}
-                      <span className="mr-ml-10">/</span>{" "}
-                      <span href="">عر</span>{" "}
-                      <span className="mr-ml-10">/</span>
-                      <span href="">עב</span>
+                      <a href="" className="active">
+                        En
+                      </a>
+                      <a href="" className="mr-ml-10">
+                        /
+                      </a>{' '}
+                      <a href="">عر</a>
+                      <a href="" className="mr-ml-10">
+                        /
+                      </a>
+                      <a href="">עב</a>
                     </div>
                   </div>
                   {/* <div className="d-flex">
@@ -129,7 +135,7 @@ class S04Screen extends Component {
           </Col>
         </Row>
       </Container>
-    );
+    )
   }
 }
-export default S04Screen;
+export default S04Screen

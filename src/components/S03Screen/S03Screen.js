@@ -1,21 +1,21 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import "./s3.css";
+import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import './s3.css'
 
 const S03Screen = () => {
   const dataObj = [
-    { desc: "The Dreyfus Affair", img: "/Images/s032.png" },
-    { desc: "Children’s Press", img: "/Images/s032.png" },
-    { desc: "Parties Press", img: "/Images/s032.png" },
-    { desc: 1948, img: "/Images/s032.png" },
-    { desc: "Orthodox Press", img: "/Images/s032.png" },
-    { desc: "The Arab Revolt", img: "/Images/s032.png" },
-    { desc: "Story Cover", img: "/Images/s032.png" },
-  ];
+    { desc: 'The Dreyfus Affair', img: '/Images/s032.png' },
+    { desc: 'Children’s Press', img: '/Images/s032.png' },
+    { desc: 'Parties Press', img: '/Images/s032.png' },
+    { desc: 1948, img: '/Images/s032.png' },
+    { desc: 'Orthodox Press', img: '/Images/s032.png' },
+    { desc: 'The Arab Revolt', img: '/Images/s032.png' },
+    { desc: 'Story Cover', img: '/Images/s032.png' },
+  ]
 
   const openScreenS08 = () => {
-    window.location.href = "/s08";
-  };
+    window.location.href = '/s08'
+  }
   return (
     <Container>
       <Row className="justify-content-md-center">
@@ -47,14 +47,22 @@ const S03Screen = () => {
                 </div>
               </div>
 
-              <div className="back d-flex">
+              <div className="back d-flex footer-leg">
                 <div className="d-flex">
                   <p className="m-0 back-arrow">&#10005; Close</p>
 
                   <div className="d-flex">
-                    <span href="">En</span> <span className="mr-ml-10">/</span>{" "}
-                    <span href="">عر</span> <span className="mr-ml-10">/</span>
-                    <span href="">עב</span>
+                    <a href="" className="active">
+                      En
+                    </a>
+                    <a href="" className="mr-ml-10">
+                      /
+                    </a>
+                    <a href="">عر</a>
+                    <a href="" className="mr-ml-10">
+                      /
+                    </a>
+                    <a href="">עב</a>
                   </div>
                 </div>
                 <div className="d-flex">
@@ -68,7 +76,7 @@ const S03Screen = () => {
         </Col>
       </Row>
     </Container>
-  );
-};
+  )
+}
 
-export default S03Screen;
+export default S03Screen

@@ -33,4 +33,5 @@
   align-items: center;
   justify-content: center;
 }
-
+.s03-main .footer-leg a{color: #ffffff;}
+.s03-main .footer-leg a.active{border-bottom: 2px solid #ffffff;}
