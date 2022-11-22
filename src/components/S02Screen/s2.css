@@ -65,6 +65,12 @@ h1 {
   color: #ffffff;
   border: 0;
 }
+.read-btn-all{
+  font-family: 'MasadaMedium';
+}
+.read-btn-s02{
+  font-family: 'MasadaBook';
+}
 .l-r-border {
   border-right: 2px solid #000000;
   border-left: 2px solid #000000;

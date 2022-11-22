@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { addGrayClass } from "../../utils";
 import SwiperSlider from "../Slider/SwiperSlide";
+import "./s05.css";
 
 const sliderObj = [
   {
@@ -29,6 +31,9 @@ const sliderObj = [
   },
 ];
 class S05Screen extends Component {
+  componentDidMount() {
+    addGrayClass();
+  }
   render() {
     console.log(sliderObj);
     return (
@@ -40,8 +45,11 @@ class S05Screen extends Component {
               <div className="text-white">
                 From the Library Newspapers Collection
               </div>
-              <div className="text-white">Children’s Press</div>
-              <div className="text-white">
+              <div className="text-white text-title-s05">Children’s Press</div>
+              <div className="text-white text-main-title-s05">
+                Dreaming of a Country
+              </div>
+              <div className="text-white text-desc-s05">
                 The Hebrew children’s press was a tremendous enterprise of
                 creating culture and language. From the beginning of the 20th
                 century, Hebrew children’s newspapers occupied a central place

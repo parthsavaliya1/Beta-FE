@@ -1,10 +1,5 @@
-import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Switch,
-} from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import S01Screen from "./components/S01Screen/S01Screen";
 import S02Screen from "./components/S02Screen/S02Screen";

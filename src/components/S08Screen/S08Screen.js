@@ -1,8 +1,12 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import './s8.css'
+import React, { useEffect } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { addGrayClass } from "../../utils";
+import "./s8.css";
 
 const S08Screen = () => {
+  useEffect(() => {
+    addGrayClass();
+  }, []);
   return (
     <Container>
       <Row className="justify-content-md-center">
@@ -80,7 +84,7 @@ const S08Screen = () => {
                       </a>
                       <a href="" className="mr-ml-10">
                         /
-                      </a>{' '}
+                      </a>{" "}
                       <a href="">عر</a>
                       <a href="" className="mr-ml-10">
                         /
@@ -100,7 +104,7 @@ const S08Screen = () => {
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default S08Screen
+export default S08Screen;
