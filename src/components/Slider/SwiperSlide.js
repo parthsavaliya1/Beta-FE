@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./swiper.css";
 
-const SwiperSlider = () => {
+const SwiperSlider = ({ sliderObj }) => {
   return (
     <Swiper
       modules={[Pagination, Scrollbar, A11y]}
@@ -24,11 +24,20 @@ const SwiperSlider = () => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
     >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      ...
+      {sliderObj?.map((item, index) => (
+        <SwiperSlide>
+          <div>
+            <div className="text-white">{item.date}</div>
+            <div>
+              <img src={item.img} />
+            </div>
+            <div className="text-white">{item.desc}</div>
+            <div className="text-white">{item.name}</div>
+            <div className="text-white">{item.shortDesc}</div>
+            <button>More Info</button>
+          </div>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
