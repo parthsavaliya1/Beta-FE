@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import SlickSlider from "../Slider/slick";
 import SwiperSlider from "../Slider/SwiperSlide";
 class S05Screen extends Component {
   render() {
