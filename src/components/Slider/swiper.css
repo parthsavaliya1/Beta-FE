@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .swiper-container {
+      /*width: 800px;*/
+      height: 200px;
+      border: 1px solid red;
+  }
+  
+  .swiper-slide {
+    width: 100px;
+    height: 500px;
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid darkblue;
+  }
+  
+  .swiper-slide-active {
+    background-color: lightcoral;
+    width: 900px !important;
+  }
+
+  .swiper-pagination-clickable{
+    padding-top: 30px;
+  }
+
+  .swiper-slide-next{
+    width: 1200px !important;
+  }
+  .swiper-slide-prev {
+    width: 1250px !important;
+  }
