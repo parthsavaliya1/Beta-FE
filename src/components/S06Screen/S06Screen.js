@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 
 class S06Screen extends Component {
   render() {

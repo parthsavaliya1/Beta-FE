@@ -22,7 +22,7 @@ const S01Screen = () => {
       setInterval(() => {
         element[0].src = `${urls[cout]}`;
         cout == urls.length - 1 ? (cout = 0) : cout++;
-      }, 50000);
+      }, 1000);
     }
   }, []);
 
