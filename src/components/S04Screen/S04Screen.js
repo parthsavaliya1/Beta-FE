@@ -18,7 +18,7 @@ class S04Screen extends Component {
               <div className="s03-main-layout">
                 <div className="text-center">
                   <div className="mb-51">
-                    <div className="font-size-18">BILLBOARD</div>
+                    <div className="font-size-18 mb-7">BILLBOARD</div>
                     <div className="font-size-18">
                       From the Library Newspapers Collection
                     </div>

@@ -21,6 +21,8 @@
 h1 {
   font-size: 96px;
   margin: 0;
+  font-family: MasadaMedium;
+  text-align: center;
 }
 /****************************** Start Marging Padding  **************************/
 .padding-0-48 {
