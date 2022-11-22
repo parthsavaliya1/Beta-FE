@@ -22,7 +22,9 @@
   font-family: MasadaMedium;
   src: url('/public/fonts/Masada-Medium.otf');
 }
-
+body{
+  font-family: MasadaBook;
+}
 .App {
   text-align: center;
 }
