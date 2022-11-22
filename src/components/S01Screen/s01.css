@@ -33,6 +33,9 @@ a,a:hover{text-decoration: none;}
 .p-r-15{
   padding-right: 15px;
 }
+.text-center{
+  text-align: center;
+}
 @media only screen and (max-width: 767px) {
   .s01-main {
     padding: 0 16px;
