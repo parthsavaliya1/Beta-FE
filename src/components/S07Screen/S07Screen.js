@@ -1,19 +1,24 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import './s7.css'
+import React, { useEffect } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { addGrayClass } from "../../utils";
+import "./s7.css";
 
 const S07Screen = () => {
   const handleZoomIn = () => {
-    const element = document.getElementsByClassName('img-s07')
-    element[0].style.transform = 'scale(1.2)'
-    console.log(element)
-  }
+    const element = document.getElementsByClassName("img-s07");
+    element[0].style.transform = "scale(1.2)";
+    console.log(element);
+  };
 
   const handleZoomOut = () => {
-    const element = document.getElementsByClassName('img-s07')
-    element[0].style.transform = 'inherit'
-    console.log(element)
-  }
+    const element = document.getElementsByClassName("img-s07");
+    element[0].style.transform = "inherit";
+    console.log(element);
+  };
+
+  useEffect(() => {
+    addGrayClass();
+  }, []);
 
   return (
     <Container>
@@ -197,7 +202,7 @@ const S07Screen = () => {
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default S07Screen
+export default S07Screen;

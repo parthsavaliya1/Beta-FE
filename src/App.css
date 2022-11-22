@@ -32,6 +32,10 @@ body{
   background: #000000 0% 0% no-repeat padding-box;
 }
 
+.bg-gray{
+  background: #D6D7D2 0% 0% no-repeat padding-box;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
