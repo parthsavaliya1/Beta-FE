@@ -3,9 +3,27 @@
     padding: 100px 0;
 }
 
+.plus-min span{
+ height: 48px;
+ width: 48px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 50%;
+ color: #ffffff;
+ background: #000000;
+ margin: 0 6px;
+ cursor: pointer;
+}
+
+.s07-footer{color: #000000 !important;}
+.align-item-center{align-items: center;}
 .font-size-18{
     font-family: MasadaBook;
 }
+.mr-12{margin-right: 12px;}
+.mr-18{margin-right: 18px;}
+.mr-24{margin-right: 24px;}
 .mb-7{margin-bottom: 7px !important;}
 .footer-leg p, .footer-leg a{
     font-family: MasadaBook;
