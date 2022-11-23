@@ -1,10 +1,25 @@
 .mb-10{margin-bottom: 10px;}
-.font-size-14 p{font-size: 14px;}
+.font-size-14 p{font-size: 14px;line-height: 21px;}
 .left-side-b{
     width: 313px;
 }
 .border-bottom-2{border-bottom: 2px solid;}
+.medium-f-line-height{line-height: 30px;}
+.author-margin{margin: 21px 0 36px;font-size: 24px;text-align: center;}
+.s06-text-width{max-width: 362px;}
+.s06-bottom-bar{justify-content: end;}
+.block-space-between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.s6-over-hidden {height: 872px;overflow: hidden;position: relative;}
+.plus-number{position: relative;left: 50%;bottom: 10px;transform: translate(-50%, -50%);}
 
+
+.mx-auto {margin-right: auto!important;margin-left: auto!important;}
+.padding-0{padding: 0px;}
 .mtb-20{margin: 20px 0;}
 .mb-27 {margin-bottom: 27px;}
 .mb-36 {margin-bottom: 36px;}

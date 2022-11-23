@@ -1,24 +1,24 @@
-import React, { useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { addGrayClass } from "../../utils";
-import "./s7.css";
+import React, { useEffect } from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import { addGrayClass } from '../../utils'
+import './s7.css'
 
 const S07Screen = () => {
   const handleZoomIn = () => {
-    const element = document.getElementsByClassName("img-s07");
-    element[0].style.transform = "scale(1.2)";
-    console.log(element);
-  };
+    const element = document.getElementsByClassName('img-s07')
+    element[0].style.transform = 'scale(1.2)'
+    console.log(element)
+  }
 
   const handleZoomOut = () => {
-    const element = document.getElementsByClassName("img-s07");
-    element[0].style.transform = "inherit";
-    console.log(element);
-  };
+    const element = document.getElementsByClassName('img-s07')
+    element[0].style.transform = 'inherit'
+    console.log(element)
+  }
 
   useEffect(() => {
-    addGrayClass();
-  }, []);
+    addGrayClass()
+  }, [])
 
   return (
     <Container>
@@ -89,111 +89,13 @@ const S07Screen = () => {
                 <div className="d-flex align-item-center">
                   <div className="mr-24">1/2</div>
                   <div className="text-white">
-                    <svg
-                      width="48"
-                      height="48"
-                      viewBox="0 0 48 48"
-                      className="mr-12"
-                    >
-                      <defs>
-                        <clipPath id="clip-path">
-                          <path
-                            id="Path_47"
-                            data-name="Path 47"
-                            d="M0,0H48V-48H0Z"
-                            fill="none"
-                          />
-                        </clipPath>
-                      </defs>
-                      <g
-                        id="Group_255"
-                        data-name="Group 255"
-                        transform="translate(0 48)"
-                      >
-                        <g
-                          id="Group_169"
-                          data-name="Group 169"
-                          clip-path="url(#clip-path)"
-                        >
-                          <g
-                            id="Group_168"
-                            data-name="Group 168"
-                            transform="translate(24 -0.75)"
-                          >
-                            <path
-                              id="Path_46"
-                              data-name="Path 46"
-                              d="M0,0A23.276,23.276,0,0,0,23.25-23.25,23.276,23.276,0,0,0,0-46.5,23.276,23.276,0,0,0-23.25-23.25,23.276,23.276,0,0,0,0,0Z"
-                              fill="none"
-                              stroke="#000"
-                              stroke-width="1.5"
-                            />
-                          </g>
-                        </g>
-                        <text
-                          id="_"
-                          data-name="←"
-                          transform="translate(13.5 -19.98)"
-                          font-size="24"
-                          font-family="Masada"
-                        >
-                          <tspan x="0" y="0">
-                            ←
-                          </tspan>
-                        </text>
-                      </g>
-                    </svg>
+                    <img
+                      className="img-responsive mr-12"
+                      src="/Images/previous.png"
+                    />
                   </div>
                   <div className="text-white">
-                    <svg width="48" height="48" viewBox="0 0 48 48">
-                      <defs>
-                        <clipPath id="clip-path">
-                          <path
-                            id="Path_47"
-                            data-name="Path 47"
-                            d="M0,0H48V-48H0Z"
-                            fill="none"
-                          />
-                        </clipPath>
-                      </defs>
-                      <g
-                        id="Group_256"
-                        data-name="Group 256"
-                        transform="translate(0 48)"
-                      >
-                        <g
-                          id="Group_169"
-                          data-name="Group 169"
-                          clip-path="url(#clip-path)"
-                        >
-                          <g
-                            id="Group_168"
-                            data-name="Group 168"
-                            transform="translate(24 -0.75)"
-                          >
-                            <path
-                              id="Path_46"
-                              data-name="Path 46"
-                              d="M0,0A23.276,23.276,0,0,0,23.25-23.25,23.276,23.276,0,0,0,0-46.5,23.276,23.276,0,0,0-23.25-23.25,23.276,23.276,0,0,0,0,0Z"
-                              fill="none"
-                              stroke="#000"
-                              stroke-width="1.5"
-                            />
-                          </g>
-                        </g>
-                        <text
-                          id="_"
-                          data-name="→"
-                          transform="translate(13.5 -19.98)"
-                          font-size="24"
-                          font-family="Masada"
-                        >
-                          <tspan x="0" y="0">
-                            →
-                          </tspan>
-                        </text>
-                      </g>
-                    </svg>
+                    <img className="img-responsive" src="/Images/next.png" />
                   </div>
                 </div>
               </div>
@@ -202,7 +104,7 @@ const S07Screen = () => {
         </Col>
       </Row>
     </Container>
-  );
-};
+  )
+}
 
-export default S07Screen;
+export default S07Screen
