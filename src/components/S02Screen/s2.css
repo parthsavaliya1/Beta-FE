@@ -21,8 +21,8 @@
 h1 {
   font-size: 96px;
   margin: 0;
-  font-family: MasadaMedium;
   text-align: center;
+  letter-spacing: -0.96px;
 }
 /****************************** Start Marging Padding  **************************/
 .padding-0-48 {
@@ -139,6 +139,7 @@ h1 {
 }
 .img-frame-text {
   font-size: 52px;
+  letter-spacing: -0.52px;
 }
 .text-red {
   color: #ff0000;
@@ -151,5 +152,5 @@ h1 {
 .back-arrow {
   margin-right: 102px !important;
 }
-.footer-leg a{color: #000000;}
+.footer-leg a{color: #000000;line-height: 36px;}
 .footer-leg a.active{border-bottom: 2px solid;}

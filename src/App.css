@@ -7,6 +7,10 @@
   src: url('/public/fonts/Masada-Black.otf');
 }
 @font-face {
+  font-family: MasadaLight;
+  src: url('/public/fonts/Masada-Light.otf');
+}
+@font-face {
   font-family: MasadaBlackItalic;
   src: url('/public/fonts/Masada-BlackItalic.otf');
 }
@@ -21,6 +25,9 @@
 @font-face {
   font-family: MasadaMedium;
   src: url('/public/fonts/Masada-Medium.otf');
+}
+.font-MasadaMedium{
+  font-family: MasadaMedium;
 }
 body{
   font-family: MasadaBook;
