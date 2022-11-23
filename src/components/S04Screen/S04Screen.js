@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { addGrayClass } from "../../utils";
-import "./s4.css";
+import React, { Component } from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import { addGrayClass } from '../../utils'
+import './s4.css'
 
 class S04Screen extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       screen: 1,
-    };
+    }
   }
   componentDidMount() {
-    addGrayClass();
+    addGrayClass()
   }
   render() {
     return (
@@ -19,7 +19,7 @@ class S04Screen extends Component {
         <Row className="justify-content-md-center">
           <Col>
             <div className="s04-main">
-              <div className="s03-main-layout">
+              <div className="s03-main-layout pt-0">
                 <div className="text-center sticky-header">
                   <div className="mb-51">
                     <div className="font-size-18 mb-7">BILLBOARD</div>
@@ -27,15 +27,14 @@ class S04Screen extends Component {
                       From the Library Newspapers Collection
                     </div>
                   </div>
-                  <h1 className="">Children’s Press</h1>
-                  <div className="text-content-width mb-56">
-                    The Hebrew children’s press was a tremendous enterprise of
-                    creating culture and language. From the beginning of the
-                    20th century, Hebrew children’s newspapers occupied a
-                    central place in the cultural existence, until it is
-                    difficult to imagine the lives of children in Eretz Israel
-                    without it.
-                  </div>
+                  <h1 className="mb-44">Children’s Press</h1>
+                </div>
+                <div className="text-content-width mb-56">
+                  The Hebrew children’s press was a tremendous enterprise of
+                  creating culture and language. From the beginning of the 20th
+                  century, Hebrew children’s newspapers occupied a central place
+                  in the cultural existence, until it is difficult to imagine
+                  the lives of children in Eretz Israel without it.
                 </div>
                 <div className="d-flex two-side-block">
                   <div className="s4-border-right">
@@ -43,7 +42,7 @@ class S04Screen extends Component {
                       <div>
                         <div>
                           <img
-                            src={"/Images/Zerubbabel Gilad.png"}
+                            src={'/Images/Zerubbabel Gilad.png'}
                             className="img-responsive"
                           ></img>
                         </div>
@@ -66,7 +65,7 @@ class S04Screen extends Component {
                     <div className="s4-block-width s4-over-hidden">
                       <div>
                         <img
-                          src={"/Images/Zerubbabel Gilad04.png"}
+                          src={'/Images/Zerubbabel Gilad04.png'}
                           className="img-responsive"
                         ></img>
                       </div>
@@ -91,7 +90,7 @@ class S04Screen extends Component {
                       <div>
                         <div>
                           <img
-                            src={"/Images/Zerubbabel Giladz.png"}
+                            src={'/Images/Zerubbabel Giladz.png'}
                             className="img-responsive"
                           ></img>
                         </div>
@@ -126,7 +125,7 @@ class S04Screen extends Component {
                       </a>
                       <a href="" className="mr-ml-10">
                         /
-                      </a>{" "}
+                      </a>{' '}
                       <a href="">عر</a>
                       <a href="" className="mr-ml-10">
                         /
@@ -145,7 +144,7 @@ class S04Screen extends Component {
           </Col>
         </Row>
       </Container>
-    );
+    )
   }
 }
-export default S04Screen;
+export default S04Screen
