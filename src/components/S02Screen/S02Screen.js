@@ -1,41 +1,41 @@
-import React, { useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { addGrayClass } from "../../utils";
-import "./s2.css";
+import React, { useEffect } from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import { addGrayClass } from '../../utils'
+import './s2.css'
 
 function S02Screen() {
   var urls = [
-    "/Images/s01t.png",
-    "/Images/s01.png",
-    "/Images/s01t.png",
-    "/Images/s02t.png",
-    "/Images/s01t.png",
-    "/Images/s04t.png",
-  ];
-  var cout = 1;
+    '/Images/s01t.png',
+    '/Images/s01.png',
+    '/Images/s01t.png',
+    '/Images/s02t.png',
+    '/Images/s01t.png',
+    '/Images/s04t.png',
+  ]
+  var cout = 1
 
   useEffect(() => {
-    addGrayClass();
-  }, []);
+    addGrayClass()
+  }, [])
 
   const openThirdScreen = () => {
-    window.location.href = "/s03";
-  };
+    window.location.href = '/s03'
+  }
 
   const openScreenS04 = () => {
-    window.location.href = "/s04";
-  };
+    window.location.href = '/s04'
+  }
 
   const imageObj = [
     {
-      desc: "Orthodox Press",
-      img: "/Images/Orthodox_cover_test.png",
+      desc: 'Orthodox Press',
+      img: '/Images/Orthodox_cover_test.png',
     },
     {
-      desc: "Children’s Press",
-      img: "/Images/Zerubbabel-Gilad.png",
+      desc: 'Children’s Press',
+      img: '/Images/Zerubbabel-Gilad.png',
     },
-  ];
+  ]
 
   return (
     <Container>
@@ -44,7 +44,7 @@ function S02Screen() {
           <div className="s02-main">
             <div className="s02-main-layout">
               <div className="padding-0-48 text-center">
-                <h1 className="m-0">
+                <h1 className="m-0 mb-45">
                   Billboard: From the Library Newspapers Collection
                 </h1>
               </div>
@@ -90,7 +90,7 @@ function S02Screen() {
                       </a>
                       <a href="" className="mr-ml-10">
                         /
-                      </a>{" "}
+                      </a>{' '}
                       <a href="">عر</a>
                       <a href="" className="mr-ml-10">
                         /
@@ -128,10 +128,12 @@ function S02Screen() {
               </div>
             </div>
           </div>
+
+          <div className="square"></div>
         </Col>
       </Row>
     </Container>
-  );
+  )
 }
 
-export default S02Screen;
+export default S02Screen

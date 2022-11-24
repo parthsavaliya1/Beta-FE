@@ -2,7 +2,7 @@
     color: #000000 !important;
     background: #d5d7d1 !important;
   }
-  .s04-main .s03-main-layout {
+  .s04-main .s03-main-layout,.s06-main .s03-main-layout {
     padding: 56px 0;
   }
   .font-size-18 {
@@ -47,18 +47,18 @@
   .mb-mt-36 {
     margin: 36px 0;
   }
-  .s04-main .back ,.s08-main .back {
+  .s04-main .back ,.s08-main .back,.s06-main .back {
     justify-content: space-between;
     margin-top: 90px;
   }
   .two-side-block {
     position: relative;
   }
-  .two-side-block .num-of-img {
+  .two-side-block .num-of-img,.s6-over-hidden .num-of-img  {
     bottom: 0;
     top: 102%;
   }
-  .two-side-block::before {
+  .two-side-block::before,.s6-over-hidden::before {
     content: "";
     background: transparent
       linear-gradient(
