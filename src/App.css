@@ -42,7 +42,9 @@ body{
 .bg-gray{
   background: #D6D7D2 0% 0% no-repeat padding-box;
 }
-
+.cursor-pointer {
+  cursor: pointer;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

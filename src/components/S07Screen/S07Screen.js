@@ -1,24 +1,25 @@
-import React, { useEffect } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import { addGrayClass } from '../../utils'
-import './s7.css'
+import React, { useEffect } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { addGrayClass } from "../../utils";
+import "./s7.css";
 
 const S07Screen = () => {
   const handleZoomIn = () => {
-    const element = document.getElementsByClassName('img-s07')
-    element[0].style.transform = 'scale(1.2)'
-    console.log(element)
-  }
+    const element = document.getElementsByClassName("img-s07");
+    element[0].style.transform = "scale(1.2)";
+    element[0].style.transition = "transform .5s ease";
+    console.log(element);
+  };
 
   const handleZoomOut = () => {
-    const element = document.getElementsByClassName('img-s07')
-    element[0].style.transform = 'inherit'
-    console.log(element)
-  }
+    const element = document.getElementsByClassName("img-s07");
+    element[0].style.transform = "inherit";
+    console.log(element);
+  };
 
   useEffect(() => {
-    addGrayClass()
-  }, [])
+    addGrayClass();
+  }, []);
 
   return (
     <Container>
@@ -41,7 +42,10 @@ const S07Screen = () => {
                 />
               </div>
               <div className="back d-flex footer-leg s07-footer">
-                <div className="align-item-center d-flex">
+                <div
+                  className="align-item-center cursor-pointer d-flex"
+                  onClick={() => handleZoomOut()}
+                >
                   <svg
                     className="mr-18"
                     xmlns="http://www.w3.org/2000/svg"
@@ -79,10 +83,16 @@ const S07Screen = () => {
                   Close
                 </div>
                 <div className="d-flex align-item-center plus-min">
-                  <div className="text-white" onClick={() => handleZoomOut()}>
+                  <div
+                    className="text-white cursor-pointer"
+                    onClick={() => handleZoomOut()}
+                  >
                     <span> - </span>
                   </div>
-                  <div className="text-white" onClick={() => handleZoomIn()}>
+                  <div
+                    className="text-white cursor-pointer"
+                    onClick={() => handleZoomIn()}
+                  >
                     <span> + </span>
                   </div>
                 </div>
@@ -104,7 +114,7 @@ const S07Screen = () => {
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default S07Screen
+export default S07Screen;
