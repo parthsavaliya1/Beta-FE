@@ -1,12 +1,16 @@
-import React, { useEffect } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import { addGrayClass } from '../../utils'
-import './s8.css'
+import React, { useEffect } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { addGrayClass } from "../../utils";
+import "./s8.css";
 
 const S08Screen = () => {
   useEffect(() => {
-    addGrayClass()
-  }, [])
+    addGrayClass();
+  }, []);
+
+  const handleBack = () => {
+    window.history.back();
+  };
   return (
     <Container>
       <Row className="justify-content-md-center">
@@ -76,7 +80,9 @@ const S08Screen = () => {
                 </div>
                 <div className="back d-flex footer-leg">
                   <div className="d-flex">
-                    <p className="m-0 back-arrow">← Back</p>
+                    <p className="m-0 back-arrow" onClick={() => handleBack()}>
+                      ← Back
+                    </p>
 
                     <div className="d-flex">
                       <a href="" className="active">
@@ -84,7 +90,7 @@ const S08Screen = () => {
                       </a>
                       <a href="" className="mr-ml-10">
                         /
-                      </a>{' '}
+                      </a>{" "}
                       <a href="">عر</a>
                       <a href="" className="mr-ml-10">
                         /
@@ -105,7 +111,7 @@ const S08Screen = () => {
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default S08Screen
+export default S08Screen;
